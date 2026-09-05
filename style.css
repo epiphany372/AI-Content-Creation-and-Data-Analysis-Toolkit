@@ -1,0 +1,30 @@
+/* --- 全局设置 --- */
+/* 让容器之间的间距更像Vercel的网格 */
+[data-testid="stVerticalBlock"] > [style*="flex-direction: column;"] > [data-testid="stVerticalBlock"] {
+    gap: 1.5rem;
+}
+
+/* 移除Streamlit主容器的一些默认边距，让它更紧凑 */
+[data-testid="stAppViewContainer"] > .main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* --- 卡片样式 (app.py) --- */
+/* 增加鼠标悬停时的效果 */
+[data-testid="stVerticalBlock"] .st-emotion-cache-1r4qj8v {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+[data-testid="stVerticalBlock"] .st-emotion-cache-1r4qj8v:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* --- 按钮样式 (app.py) --- */
+/* 让 page_link 按钮看起来更现代 */
+.stPageLink a {
+    font-weight: 600;
+}

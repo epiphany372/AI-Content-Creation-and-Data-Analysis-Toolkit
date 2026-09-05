@@ -1,0 +1,18 @@
+# API 配置（含密钥，禁止提交）
+.api_config.json
+
+# 临时测试文件
+temp1.docx
+temp1.pdf
+temp1.txt
+
+# 测试文件
+personal_data.csv
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE 配置
+.idea/
